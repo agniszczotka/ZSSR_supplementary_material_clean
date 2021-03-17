@@ -1,0 +1,30 @@
+\begin{figure}
+\centering
+\begin{subfigure}{1.0\textwidth}
+    \centering
+    \includesvg[inkscapelatex=false,scale=0.6]{experts_outilers.svg}%
+    \includesvg[inkscapelatex=false,scale=0.6]{nonexperts_outilers.svg}
+     
+\caption{The box plots show an estimated distribution of the perceived quality for each reconstruction method, which shows probabilities of selecting one reconstruction method over
+all others. The estimation is used only to check observer responses for potential outliers, and it is not used as the statistical measure for comparing reconstructions. The blue circles represent the
+answers of the observers which have non-consistent behaviour with rest of the observers computed as an inter-quartile-normalised score. The observers with the inter-quartile-normalised score higher than 0.2 are considered as a potential outlier and excluded from further analyses.}
+\end{subfigure}
+\begin{subfigure}{1.0\textwidth}
+    \centering
+    \includesvg[inkscapelatex=false,scale=0.6]{JOD_experts.svg}%
+    \includesvg[inkscapelatex=false,scale=0.6]{JOD_nonexperts.svg}
+\caption{Visualisation of Just-Objectionable-Differences (JOD) given as scaled results of Thurstone model with their confidence intervals.
+BASELINE does not have a confidence interval, as this is a reference method for computing other methods relative scores. Confidence intervals represent the range in which the estimated quality values lie with 95\% confidence, yet
+they are not a measure of the statistical significance of the difference between methods.
+The difference of 1 JOD indicates that 75\% of observers selected one condition as better than the other. The confidence intervals are estimated with bootstrapping on 5000 random samples.}
+\label{scaling}
+\end{subfigure}
+\begin{subfigure}{1.0\textwidth}
+    \centering
+    \includesvg[inkscapelatex=false,scale=0.6]{triangle_experts.svg}%
+    \includesvg[inkscapelatex=false,scale=0.6]{triangle_nonexperts.svg}
+\caption{The representation of an analysis of a statistical significance for the comparison of the reconstruction methods. Red points indicate reconstruction method, and they are connected to the compared methods of the interest. The statistically significant differences are shown as solid blue lines, as opposed to red dashed lines. The x-axis represents the scaling scores from plot~(\ref{scaling}).}
+\end{subfigure}
+\caption[short]{}{Statistical analysis of the pairwise comparison experiments with Thurstone model with open source implementation available at~\url{https://github.com/mantiuk/pwcmp}.}
+
+\end{figure}
